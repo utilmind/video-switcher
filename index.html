@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+  <title>Video switcher demo by AK &copy; 2019</title>
+
+  <script defer
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script defer src="video-switcher.min.js"></script>
+</head>
+
+<body>
+
+<div>
+  <video controls autoplay muted preload="metadata" id="myvideo" style="width: 100%;">
+    <source src="./vids/FeaturedRestaurantHurricaneCafe.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<script>
+var myvid = document.getElementById("myvideo"),
+    myvids = [
+      "./vids/FeaturedRestaurantHurricaneCafe.mp4",
+      "./vids/FeaturedRestaurantBistro.mp4",
+      "./vids/FeaturedRestaurantNJOsteria2.mp4",
+      "./vids/FeaturedRestaurantPortobello.mp4",
+    ];
+</script>
+
+</body>
+</html>
